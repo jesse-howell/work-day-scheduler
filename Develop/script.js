@@ -11,7 +11,7 @@ $(function() {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
-
+// added click listener
   // Step 1: Select all save buttons
 var saveButtons = $('.savebtn');
 
@@ -39,6 +39,18 @@ saveButtons.on('click', function() {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
+  // each time block needs past, present or future applied to them. compare the
+  // current hour to the id of the block. 9am will be past, 10 present and everything else future.
+  function handler (event) {
+    var target = $(event.target);
+    if (target.is("hour-9")) {
+      target.children().hide();
+
+    }
+  }
+  // if the current time block has an id more than 10, it's in the future
+
+  // the time must be logged as 24 hour
 
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
