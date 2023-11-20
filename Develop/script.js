@@ -1,8 +1,9 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+// $(document).ready(function () {
 
-$(document).ready(function() {
+
 $(function() {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -41,32 +42,57 @@ saveButtons.on('click', function() {
 
   // each time block needs past, present or future applied to them. compare the
   // current hour to the id of the block. 9am will be past, 10 present and everything else future.
-  function handler (event) {
-    var target = $(event.target);
-    if (target.is("hour-9")) {
-      target.children().hide();
+  
 
-    }
-  }
   // if the current time block has an id more than 10, it's in the future
 
   // the time must be logged as 24 hour
+// Get the current hour using Day.js in 24-hour format
+// var currentHour = dayjs().format('H');
 
+// // Loop through each time block
+// $('.time-block').each(function() {
+//   // Get the hour from the id of the time block
+//   var blockHour = parseInt($(this).attr('id'));
+
+//   // Compare the block hour with the current hour
+//   if (blockHour < currentHour) {
+//     // If the block hour is in the past, add the 'past' class
+//     $(this).addClass('past');
+//   } else if (blockHour == currentHour) {
+//     // If the block hour is the current hour, add the 'present' class
+//     $(this).addClass('present');
+//   } else {
+//     // If the block hour is in the future, add the 'future' class
+//     $(this).addClass('future');
+//   }
+// });
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  //
+  // Loop through each time block
+// $('.time-block').each(function() {
+//   // Get the id of the time block
+//   var blockId = $(this).attr('id');
+
+//   // Get the user input from localStorage using the blockId as the key
+//   var userInput = localStorage.getItem(blockId);
+
+//   // If there is a user input saved in localStorage, set the value of the textarea element
+//   if (userInput) {
+//     $(this).find('textarea').val(userInput);
+//   }
+// });
   // TODO: Add code to display the current date in the header of the page.
   
   // added current date
-  var currentDate = dayjs('2023-11-19').format('ddd, MMM D, YYYY');
-  $('#currentDay').text(currentDate); 
-  var originalDate = dayjs('2023-11-19');
-  console.log(originalDate.format('2023-11-19'));
+  $(function updateCurrentDate() { 
+  var currentDate = dayjs('2023-11-20').format('ddd, MMM D, YYYY');
+  $('#currentDay').text(currentDate);
+  updateCurrentDate(); 
+  setInterval((updateCurrentDate, 1000));
 
-
-
-
+}); 
 });
-});
+
