@@ -8,39 +8,47 @@ This is a simple calendar application that allows a user to save events for each
 
 Open the site, enter text into the text box then click the save button.
 
-![alt text](assets/images/screenshot.png)
+![Work Day Scheduler](assets/images/2_%20Work%20Day%20Scheduler.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+[YouTube](https://www.youtube.com)
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+[MDN](https://developer.mozilla.org/en-US/docs/Web)
 
 ## License
 
-https://choosealicense.com/
+Copyright (c) 2023 Jesse Howell
 
----
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+Permission is hereby granted, free of charge, to any person obtaining a copy
 
-## Badges
+of this software and associated documentation files (the "Software"), to deal
 
-badmath
+in the Software without restriction, including without limitation the rights
 
-shields.io
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 
-## Features
+copies of the Software, and to permit persons to whom the Software is
 
-If your project has a lot of features, list them here.
+furnished to do so, subject to the following conditions:
 
-## How to Contribute
+The above copyright notice and this permission notice shall be included in all
 
-Contributor Covenant
+copies or substantial portions of the Software.
 
-## Tests
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+
+SOFTWARE.
+
+[Live URL](https://jesse-howell.github.io/work-day-scheduler/)
