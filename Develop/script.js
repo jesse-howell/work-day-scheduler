@@ -2,7 +2,9 @@
   var timeBlocks = $(".container-lg px-5");
 
 // added click listener
-$(".saveBtn").on("click", function saveButton () {
+// added preventDefault
+$(".saveBtn").on("click", function saveButton (event) {
+  event.preventDefault();
   console.log($(this).prev());
   var textContent = ($(this).prev().val());
   var parentID = ($(this).parent().attr("id"));
@@ -32,7 +34,7 @@ $(".saveBtn").on("click", function saveButton () {
 
   // added current date
   function updateCurrentDate() { 
-  var currentDate = dayjs().format('ddd, MMM D, YYYY');
+  var currentDate = dayjs().format('dddd MMM D, YYYY');
   $('#currentDay').text(currentDate);
   setInterval((updateCurrentDate, 1000));
 
